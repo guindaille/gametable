@@ -10,6 +10,7 @@
         "postinstall": "bunx pre-commit install -f -t pre-commit -t commit-msg -t pre-push"
     },
     "dependencies": {
+        "@solidjs/router": "^0.15.1",
         "solid-js": "^1.9.3"
     },
     "devDependencies": {
