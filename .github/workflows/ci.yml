@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  unit-testing:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out into $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+
+      - name: Download, install and setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Check unit tests
+        run: |
+          echo Installing dependencies...
+          bun install
+          echo Testing...
+          bun test
