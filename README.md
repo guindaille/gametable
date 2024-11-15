@@ -34,7 +34,7 @@ It correctly bundles Solid in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-### `bun test`
+### `bun run test:watch`
 
 Runs the unit tests.
 
@@ -44,5 +44,4 @@ Learn more about deploying your application with the [documentations](https://vi
 
 # start with docker
 
-use ./run.sh 
-
+use ./run.sh

@@ -1,8 +1,5 @@
-/**
- * Elements are playable/movable/main objects in the game.
- * They will be, for instance:
- * - a dice,
- * - a card,
- * - an activable timer (i.e. an hourglass),
- * - etc
- */
+import { expect, test } from "vitest";
+
+test("element", () => {
+    expect(true).toBe(true);
+});

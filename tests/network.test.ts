@@ -1,3 +1,5 @@
-/**
- * Network features (WebRTC, WebSockets, etc.) will go here
- */
+import { expect, test } from "vitest";
+
+test("network", () => {
+    expect(true).toBe(true);
+});
